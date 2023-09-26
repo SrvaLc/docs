@@ -1,0 +1,262 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+ 
+
+  /*// Site customization //*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* color palette */
+:root { 
+        --White0:  #fff;
+        --Green1:  #344e40;
+        --Green2:  #3a5a42;
+        --Green3:  #43e241;
+        --Green4:  #284e28;
+        --Yellow1: #fffb00;
+        --Orange1: #ea9d70;
+        --Orange2: #f75b00;
+}
+
+/* General customizations */
+body{
+    background-color: var(--Green1);
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*Customization of the header*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--Green4);
+    min-height: 50px;
+    align-items: center;
+
+}
+.box-img-reader{
+height: 100%;
+
+}
+
+/*Logo*/
+.img-logo{
+    max-width: 60px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Area da Header */
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ 
+/* nav bar link decoration */
+.nav-links{
+    text-decoration: none;
+    color: var(--White0);
+}
+
+/* mouse reaction on nav bar */
+.nav-links:hover{
+    color: var(--Orange1);
+    transition: .4s;
+    text-decoration: underline;
+}
+.box-btn-action{
+    display: flex;
+    gap: 2rem;
+}
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+/* Sign in and Sign Up */
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--White0);
+    color: var(--White0);
+    
+}
+.btn-action:hover{
+    background-color:var(--Green3);
+    border: 1px solid var(--Green3);
+}
+.link-action{
+    text-decoration: none;
+    width: 75px;
+    text-align: center;
+}
+
+/*Customization of the header END*/
+
+
+/* Page organization */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section{
+    padding: 4rem;
+}
+/* Page organization END */
+
+
+
+/* Fisrt Section */
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 200px;
+}
+
+/* Presentations Text */
+h1{
+    font-size: 4rem;
+    color: var(--White0);
+    letter-spacing: 2px;
+}
+strong{
+    color: var(--Yellow1);
+}
+.first-section p{
+    color: var(--White0);
+}
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+/* Profile Image */
+.img-profile{
+    border-radius: 50%;
+    width: 100%;
+}
+/* Fisrt Section END*/
+
+
+
+/* Second section */
+/* Experience + My Projects Background-color */
+:is(.second-section, .fourth-section){
+    background-color: var(--Green2);
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Experience custons */
+.second-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Link Experience */
+.second-section ul li {
+    color: var(--Orange1);
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+.second-section ul li:hover {
+    color: var(--Orange2);
+    transition: .4s;
+    cursor: default;
+}
+.second-section ul a{
+    text-decoration: none;
+}
+
+/* Title experience */
+.title{
+    color: var(--Orange2);
+}
+/* Second section END */
+
+
+
+/* Third Section */
+/* Who I am? */
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.third-section > div{
+    display:flex ;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Who I am image */
+.third-section >  div img{
+    width: 300px;
+    border-radius: 50px;
+}
+
+/* Who I Am Text */
+.third-section > div p{
+    max-width: 600px;
+    color: var(--White0);
+    text-align: justify;
+}
+/* Third Section END */
+
+
+
+/* Fourth Section */
+/* Footer */
+/* footer colors */
+footer{
+    background-color: var(--Green1);
+    padding: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+/* Contact Links */
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+/* Fourth Section END*/
+
+
+  /*//  Site customization  END //*/
+
